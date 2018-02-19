@@ -1,0 +1,6 @@
+framework module Pods_HappystagramUITests {
+  umbrella header "Pods-HappystagramUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
