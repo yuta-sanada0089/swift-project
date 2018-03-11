@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="avCapturePhoto_simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-v0-tIW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-zY-XfY">
+                                <rect key="frame" x="142" y="557" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="gC2-px-xhG"/>
+                                    <constraint firstAttribute="height" constant="90" id="qGe-O2-yNO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="maru"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qN4-0u-dD0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yRN-zY-XfY" secondAttribute="bottom" constant="20" id="DcZ-1m-d1o"/>
+                            <constraint firstItem="YuF-v0-tIW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ON7-jl-lXg"/>
+                            <constraint firstItem="yRN-zY-XfY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aYk-lc-4An"/>
+                            <constraint firstItem="YuF-v0-tIW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bQu-A2-lZh"/>
+                            <constraint firstItem="YuF-v0-tIW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kJg-1f-1hU"/>
+                            <constraint firstItem="YuF-v0-tIW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ocJ-W1-q6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="YuF-v0-tIW" id="DxN-D0-IMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="maru" width="60" height="60"/>
+    </resources>
+</document>
